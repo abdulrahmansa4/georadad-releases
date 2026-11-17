@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تحميل تطبيق GEO RADDAD</title>
+<meta name="description" content="تطبيق حضور الموظفين - شركة رداد المدينة">
+<meta name="theme-color" content="#1E2A8A">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --navy: #1E2A8A; --navy-dark: #16205F; --gold: #F4B400; --ink: #1A1A2E; --muted: #6B7280; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Tajawal', Tahoma, sans-serif; color: var(--ink); background: #fff;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 100svh; padding: 32px 20px; text-align: center;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0 0 auto 0; height: 6px;
+    background: linear-gradient(90deg, var(--navy) 0 70%, var(--gold) 70% 100%);
+  }
+  main { width: 100%; max-width: 380px; display: flex; flex-direction: column; align-items: center; }
+  img { width: min(260px, 70vw); height: auto; mix-blend-mode: multiply; /* the logo's off-white square disappears on white */ }
+  h1 { font-size: 1.6rem; font-weight: 800; color: var(--navy); margin-top: 8px; }
+  p { color: var(--muted); font-size: 1rem; margin-top: 6px; }
+  .btn {
+    margin-top: 32px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 12px;
+    background: var(--navy); color: #fff; text-decoration: none; font-weight: 700; font-size: 1.25rem;
+    padding: 18px 24px; border-radius: 16px; border-bottom: 4px solid var(--gold);
+    box-shadow: 0 10px 24px -10px rgba(30, 42, 138, .55);
+    transition: transform .15s ease, background .15s ease;
+  }
+  .btn:hover { background: var(--navy-dark); }
+  .btn:active { transform: translateY(2px); }
+  .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .btn svg { width: 26px; height: 26px; flex: none; }
+  small { display: block; margin-top: 12px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <img src="logo.png" alt="شعار شركة رداد المدينة" width="480" height="480">
+  <h1>تطبيق حضور الموظفين</h1>
+  <p>شركة رداد المدينة</p>
+  <a class="btn" href="https://github.com/abdulrahmansa4/georadad-releases/releases/download/install/GEO-RADDAD.apk" download>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+    تحميل التطبيق
+  </a>
+  <small>لأجهزة أندرويد</small>
+</main>
+</body>
+</html>
